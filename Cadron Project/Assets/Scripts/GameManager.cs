@@ -80,6 +80,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void DialogHide(){
+        dialogBox.SetActive(false);
+    }
+
     void Start()
     {
         
