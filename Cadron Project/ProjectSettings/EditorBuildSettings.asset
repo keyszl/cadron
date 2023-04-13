@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 5b0dd63d4b253a44185f816e83222a4a
+  - enabled: 1
+    path: Assets/Scenes/Season 2.unity
+    guid: 28d6b95de500a0240a56c2b2cc606acc
+  - enabled: 1
+    path: Assets/Scenes/ZK_Scene.unity
+    guid: 56f3b66553f93a7438aca611ab6aca91
   m_configObjects: {}
