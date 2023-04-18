@@ -42,6 +42,7 @@ public class CutSceneDialog : MonoBehaviour
     public void StartCutscene(string name, Sprite portrait){
         line = 0;
         nexttext.text = "Next";
+        backButton.SetActive(false);
         charactername.text = name;
         characterportrait.GetComponent<Image>().overrideSprite = portrait;
     }
