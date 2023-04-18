@@ -10,7 +10,7 @@ public class CutSceneDialog : MonoBehaviour
     private int line;
     public TextMeshProUGUI charactername;
     public GameObject characterportrait;
-    public GameObject nextButton;
+    public GameObject backButton;
     public TextMeshProUGUI nexttext;
 
     public void nextClick(){
@@ -24,14 +24,24 @@ public class CutSceneDialog : MonoBehaviour
             // set button text to done
             nexttext.text = "Done";
             }
-            GameManager.Instance.DialogShow(lines[line]);
-            
-            
+            backButton.SetActive(true);
+            GameManager.Instance.DialogShow(lines[line]); 
         }
         
     }
+    public void backClick(){
+        if(line > 0){
+            line --;
+            GameManager.Instance.DialogShow(lines[line]);
+            nexttext.text = "Next";
+            if(line == 0){
+                backButton.SetActive(false);
+            }
+        }
+    }
     public void StartCutscene(string name, Sprite portrait){
         line = 0;
+        nexttext.text = "Next";
         charactername.text = name;
         characterportrait.GetComponent<Image>().overrideSprite = portrait;
     }
