@@ -21,8 +21,11 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        if(GameManager.Instance.GetInCutscene() == false)
+        {
+           horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical"); 
+        }
     }
 
     void FixedUpdate() {

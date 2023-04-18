@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 108139604}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 131616303}
+        m_TargetAssemblyTypeName: CutSceneDialog, Assembly-CSharp
+        m_MethodName: nextClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &108139604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +268,7 @@ GameObject:
   - component: {fileID: 131616300}
   - component: {fileID: 131616302}
   - component: {fileID: 131616301}
+  - component: {fileID: 131616303}
   m_Layer: 5
   m_Name: DialogBox
   m_TagString: Untagged
@@ -322,6 +335,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131616299}
   m_CullTransparentMesh: 1
+--- !u!114 &131616303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131616299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d2ad667856bd9c408772a1373b30888, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - line 1
+  - line 2
+  nextButton: {fileID: 108139601}
 --- !u!1 &193424432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1362,7 @@ GameObject:
   - component: {fileID: 1538243441}
   - component: {fileID: 1538243440}
   - component: {fileID: 1538243439}
+  - component: {fileID: 1538243443}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1372,7 +1402,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 900, y: 600}
+  m_ReferenceResolution: {x: 960, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1426,6 +1456,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1538243443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538243438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9bf19910129bea4184af179663228b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curtain: {fileID: 1182465071}
+  box: {fileID: 131616299}
+  text: {fileID: 1081637689}
 --- !u!1 &1916028273
 GameObject:
   m_ObjectHideFlags: 0

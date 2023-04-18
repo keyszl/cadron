@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI dialogText;
     public GameObject curtain;
     public GameObject canvas;
+    private bool inCutscene = false;
     private bool raiseLower = false;
 
      void Awake(){
@@ -84,6 +85,23 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(false);
     }
 
+    public void ToCutscene(string[] dialog, string name, Sprite portrait){
+        CutSceneDialog dialogscript = dialogBox.GetComponent<CutSceneDialog>();
+         dialogscript.lines = dialog;
+         dialogBox.SetActive(true);
+         DialogShow(dialog[0]);
+         dialogscript.StartCutscene(name, portrait);
+         inCutscene = true;
+    }
+
+    public void EndCutscene(){
+        DialogHide();
+        inCutscene = false;
+    }
+
+    public bool GetInCutscene(){
+        return inCutscene;
+    }
     void Start()
     {
         
