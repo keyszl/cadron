@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-     private Rigidbody2D body;
+    private Rigidbody2D body;
     public float horizontal;
     public float vertical;
 
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    
     private float moveLimiter = 0.7f;
 
     public float runSpeed = 5f;
@@ -16,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
     
     // Update is called once per frame
@@ -24,12 +29,25 @@ public class PlayerMovement : MonoBehaviour
         if(GameManager.Instance.GetInCutscene() == false)
         {
            horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical"); 
+            animator.SetFloat("horizontal", horizontal);
+            vertical = Input.GetAxisRaw("Vertical");
+            animator.SetFloat("vertical", vertical);
+            if (horizontal < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
+
         }
     }
 
     void FixedUpdate() {
         if (horizontal != 0 && vertical != 0) {
+            animator.SetFloat("horizontal", horizontal);
+            animator.SetFloat("vertical", vertical);
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
         }
