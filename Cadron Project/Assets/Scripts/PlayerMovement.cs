@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.Instance.GetInCutscene() == false)
+        if(GameManager.Instance.IsPaused() == false)
         {
            horizontal = Input.GetAxisRaw("Horizontal");
             animator.SetFloat("horizontal", horizontal);

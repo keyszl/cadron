@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject canvas;
     public GameObject player;
     private Dictionary<string, bool> letters;
-    private bool inCutscene = false;
+    private bool gamePaused = false;
     private bool raiseLower = false;
 
      void Awake(){
@@ -112,16 +112,22 @@ public class GameManager : MonoBehaviour
          dialogBox.SetActive(true);
          DialogShow(dialog[0]);
          dialogscript.StartCutscene(name, portrait);
-         inCutscene = true;
+         gamePaused = true;
     }
 
+    public void PauseGame(){
+        gamePaused = true;
+    }
+    public void UnpauseGame(){
+        gamePaused = false;
+    }
     public void EndCutscene(){
         DialogHide();
-        inCutscene = false;
+        gamePaused = false;
     }
 
-    public bool GetInCutscene(){
-        return inCutscene;
+    public bool IsPaused(){
+        return gamePaused;
     }
     void Start()
     {

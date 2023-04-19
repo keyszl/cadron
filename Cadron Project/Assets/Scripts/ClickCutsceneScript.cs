@@ -11,12 +11,12 @@ public class ClickCutsceneScript : MonoBehaviour
     public Texture2D cursortexture;
 
     public void OnMouseEnter(){
-        if(GameManager.Instance.GetInCutscene() == false){
+        if(GameManager.Instance.IsPaused() == false){
         Cursor.SetCursor(cursortexture, Vector2.zero, CursorMode.Auto);
         }
     }
     public void OnMouseDown(){
-        if(GameManager.Instance.GetInCutscene() == false){
+        if(GameManager.Instance.IsPaused() == false){
            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
            letterdialog.SetDialog();
            GameManager.Instance.ToCutscene(dialogLines, charname, portrait);

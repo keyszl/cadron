@@ -9,7 +9,6 @@ public class CutSceneDialog : MonoBehaviour
     public string[] lines;
     private int line;
 
-    public LetterDialog letterdialog;
     public TextMeshProUGUI charactername;
     public GameObject characterportrait;
     public GameObject backButton;
