@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI dialogText;
     public GameObject curtain;
     public GameObject canvas;
+    public GameObject player;
+    private Dictionary<string, bool> letters;
     private bool inCutscene = false;
     private bool raiseLower = false;
 
@@ -23,6 +25,25 @@ public class GameManager : MonoBehaviour
         } else {
         Destroy(gameObject);
     }
+    }
+
+    public bool IsLetterDelivered(string key){
+        if (letters.ContainsKey(key)){
+            return letters[key];
+        }
+        else
+        return false;
+    }
+    public bool HaveLetter(string key){
+        return letters.ContainsKey(key);
+    }
+    public void UpdateLetterStatus(string key){
+        if(letters.ContainsKey(key)){
+            letters[key] = !letters[key];
+        }
+    }
+    public void AddLetter(string k){
+        letters.Add(k, false);
     }
     IEnumerator ColorLerpFunction(bool fadeout, float duration)
     {
@@ -104,7 +125,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        
+        letters = new Dictionary<string, bool>();
     }
 
     // Update is called once per frame

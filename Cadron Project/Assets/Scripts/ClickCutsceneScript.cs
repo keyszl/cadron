@@ -6,6 +6,7 @@ public class ClickCutsceneScript : MonoBehaviour
 {
     public string charname;
     public string[] dialogLines;
+    public LetterDialog letterdialog;
     public Sprite portrait;
     public Texture2D cursortexture;
 
@@ -17,7 +18,9 @@ public class ClickCutsceneScript : MonoBehaviour
     public void OnMouseDown(){
         if(GameManager.Instance.GetInCutscene() == false){
            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+           letterdialog.SetDialog();
            GameManager.Instance.ToCutscene(dialogLines, charname, portrait);
+           letterdialog.UpdateLetter();
         }
         
     }
