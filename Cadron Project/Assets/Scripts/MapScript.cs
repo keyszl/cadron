@@ -5,11 +5,24 @@ using UnityEngine;
 public class MapScript : MonoBehaviour
 {
     public GameObject MapButton;
+    public GameObject LocationBox;
+
+    private Dictionary<string, bool> letters;
+    //public GameObject[] letterlocations;
     public void OpenMap(){
         if(!GameManager.Instance.IsPaused()){
             GameManager.Instance.PauseGame();
             gameObject.SetActive(true);
             MapButton.SetActive(false);
+            letters = GameManager.Instance.GetLetters();
+            foreach(Transform letter in LocationBox.transform){
+                if((GameManager.Instance.HaveLetter(letter.name)) && (GameManager.Instance.IsLetterDelivered(letter.name) == false)){
+                        letter.gameObject.SetActive(true);
+                }
+                else{
+                        letter.gameObject.SetActive(false);
+                }
+                }
         }
     }
 
@@ -21,7 +34,7 @@ public class MapScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //letterlocations = LocationBox.
     }
 
     // Update is called once per frame
