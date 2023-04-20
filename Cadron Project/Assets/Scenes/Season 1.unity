@@ -2192,6 +2192,7 @@ MonoBehaviour:
   charactername: {fileID: 537007149}
   characterportrait: {fileID: 1435460177}
   backButton: {fileID: 131746471}
+  nextButton: {fileID: 212905919}
   nexttext: {fileID: 1169521410}
 --- !u!1 &476910994
 GameObject:
@@ -2967,7 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bf19910129bea4184af179663228b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curtain: {fileID: 0}
+  curtain: {fileID: 193484953}
   box: {fileID: 469260783}
   text: {fileID: 1317079938}
 --- !u!1 &637328658

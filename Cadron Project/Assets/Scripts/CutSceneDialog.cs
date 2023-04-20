@@ -12,6 +12,7 @@ public class CutSceneDialog : MonoBehaviour
     public TextMeshProUGUI charactername;
     public GameObject characterportrait;
     public GameObject backButton;
+    public GameObject nextButton;
     public TextMeshProUGUI nexttext;
 
     public void nextClick(){
@@ -26,7 +27,11 @@ public class CutSceneDialog : MonoBehaviour
             nexttext.text = "Done";
             }
             backButton.SetActive(true);
+           // nextButton.SetActive(false);
             GameManager.Instance.DialogShow(lines[line]); 
+            //StartCoroutine(WaitingForNext());
+            
+            
         }
         
     }
@@ -47,6 +52,13 @@ public class CutSceneDialog : MonoBehaviour
         charactername.text = name;
         characterportrait.GetComponent<Image>().overrideSprite = portrait;
     }
+
+    //IEnumerator WaitingForNext()
+    //{
+       // yield return new WaitForSeconds(1);
+        //nextButton.SetActive(true);
+        //backButton.SetActive(true);
+    //}
     
     // Start is called before the first frame update
     void Start()
