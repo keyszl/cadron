@@ -129,6 +129,9 @@ public class GameManager : MonoBehaviour
     public bool IsPaused(){
         return gamePaused;
     }
+    public Dictionary<string, bool> GetLetters(){
+        return letters;
+    }
     void Start()
     {
         letters = new Dictionary<string, bool>();

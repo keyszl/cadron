@@ -37,7 +37,7 @@ public class LetterDialog : MonoBehaviour
         if(GM.HaveLetter(charname)){
             if(!GM.IsLetterDelivered(charname)){
                 GM.UpdateLetterStatus(charname);
-                if(!GM.HaveLetter(sendsletterto) && !sendsletterto.Equals(null)){
+                if(!GM.HaveLetter(sendsletterto) && sendsLetter){
                   GM.AddLetter(sendsletterto);  
                 }
             }
