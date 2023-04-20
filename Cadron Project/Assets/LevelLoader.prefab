@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1155187338570968228}
-  - component: {fileID: 8506534983980906214}
+  - component: {fileID: 5774328422438173043}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8506534983980906214
+--- !u!114 &5774328422438173043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 856ac4b3ba506f44984848fef7df76e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 1155187339084251159}
-  transitionTime: 4
+  transition: {fileID: 0}
+  transitionTime: 0
 --- !u!1 &1155187339084251153
 GameObject:
   m_ObjectHideFlags: 0

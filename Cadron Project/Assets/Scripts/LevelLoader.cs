@@ -2,20 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
   public Animator transition;
 
-  public float transitionTime = 1f;
+  public float transitionTime;
 
+  public Button myButton;
+
+    void Start(){
+      Button btn = myButton.GetComponent<Button>();
+      btn.onClick.AddListener(LoadNextLevel);
+    }
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-           LoadNextLevel();
-        }
+        //if(Input.GetMouseButtonDown(0))
+        //{
+         //  LoadNextLevel();
+        //}
     }
 
     public void LoadNextLevel()
