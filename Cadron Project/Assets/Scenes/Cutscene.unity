@@ -206,8 +206,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 457801691}
   m_HandleRect: {fileID: 457801690}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1.000001
+  m_Size: 0.20136626
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
+  m_ShowMaskGraphic: 0
 --- !u!114 &131616305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 5
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 5812014}
@@ -1149,8 +1149,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -6, y: -20}
+  m_AnchoredPosition: {x: 0, y: -317.28662}
+  m_SizeDelta: {x: -6, y: 634.572}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1081637689
 MonoBehaviour:
@@ -1172,7 +1172,50 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: One day I will have the cool scrolling text printing feature, but not today.
+  m_text: 'One day I will have the cool scrolling text printing feature, but not
+    today.
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+    this is still testing
+
+    test
+
+    test
+
+    test
+
+    test
+
+    test
+
+    almost
+    done testing
+
+    testing
+
+    test
+
+    test
+
+    done testing
+
+    done.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
   m_sharedMaterial: {fileID: 2834643015565166256, guid: 93aa82a23fc35dc4f8e98d3eda71cd2b, type: 2}
