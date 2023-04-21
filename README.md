@@ -20,9 +20,15 @@ Mechanics:
 
 Aesthetics:
 Animals - https://kale-game.itch.io/2d-pixel-art
+Animated Animals -https://lyaseek.itch.io/miniffanimals
 Base Tile set - https://mythril-age.itch.io/mythril-age-tilesets
 Characters - https://shatteredreality.itch.io/pcc
+Fire - https://brullov.itch.io/fire-animation
+Food - https://henrysoftware.itch.io/pixel-food
+Nature - https://shubibubi.itch.io/nature-things
 Scroll image - https://pngtree.com/freepng/old-kraft-paper-scroll_5446449.html
+Tent - https://opengameart.org/content/tent-8
+Indoor objects - https://penzilla.itch.io/top-down-retro-house
 
 Sounds:
 
