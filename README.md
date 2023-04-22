@@ -20,7 +20,7 @@ Mechanics:
 
 Aesthetics:
 Animals - https://kale-game.itch.io/2d-pixel-art
-Animated Animals -https://lyaseek.itch.io/miniffanimals
+Animated Animals - https://lyaseek.itch.io/miniffanimals
 Base Tile set - https://mythril-age.itch.io/mythril-age-tilesets
 Characters - https://shatteredreality.itch.io/pcc
 Fire - https://brullov.itch.io/fire-animation
