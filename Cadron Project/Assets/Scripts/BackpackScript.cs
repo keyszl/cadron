@@ -18,7 +18,7 @@ public class BackpackScript : MonoBehaviour
         
         GameManager.Instance.PauseGame(); 
         letters = GameManager.Instance.GetLetters();
-        Vector2 letterpos = new Vector2(-200,135);
+        Vector2 letterpos = new Vector2(-170,135);
         foreach(KeyValuePair<string, bool> letter in letters){
             string to = letter.Key;
             if(letter.Value == false){
@@ -26,10 +26,10 @@ public class BackpackScript : MonoBehaviour
                 newletter.transform.SetParent(letterbox.transform);
                 newletter.GetComponent<RectTransform>().anchoredPosition = letterpos;
                 newletter.name = to;
-                letterpos.x = letterpos.x + 135;
-                if(letterpos.x % 205 == 135){
-                    letterpos.y = letterpos.y - 100;
-                    letterpos.x = -200;
+                letterpos.x = letterpos.x + 170;
+                if(letterpos.x > 170){
+                    letterpos.y = letterpos.y - 105;
+                    letterpos.x = -170;
                 }
             }
         }

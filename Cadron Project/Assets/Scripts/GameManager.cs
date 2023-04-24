@@ -112,7 +112,7 @@ public class GameManager : MonoBehaviour
          dialogBox.SetActive(true);
          DialogShow(dialog[0]);
          dialogscript.StartCutscene(name, portrait);
-    //         gamePaused = true;
+             gamePaused = true;
     //         Time.timeScale = 0f;
 
     }
@@ -129,7 +129,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndCutscene(){
         DialogHide();
-    //        gamePaused = false;
+        gamePaused = false;
     //        Time.timeScale = 1f;
 
     }
