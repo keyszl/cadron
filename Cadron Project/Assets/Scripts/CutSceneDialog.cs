@@ -16,7 +16,7 @@ public class CutSceneDialog : MonoBehaviour
     public TextMeshProUGUI nexttext;
 
     public void nextClick(){
-        if(line == lines.Length - 1)
+        if(line >= lines.Length - 1)
         {
         GameManager.Instance.EndCutscene();
         }
