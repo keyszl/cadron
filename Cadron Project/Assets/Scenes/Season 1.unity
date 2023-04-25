@@ -430,7 +430,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 681a1d92a6091cf4596417c13216dbcd, type: 3}
   m_Color: {r: 0.3294464, g: 0.5471698, b: 0.25551796, a: 1}
   m_FlipX: 0
@@ -3514,7 +3514,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 681a1d92a6091cf4596417c13216dbcd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24235,7 +24235,6 @@ MonoBehaviour:
   charname: Alexander McFarland
   dialogLines:
   - Welll hello there.
-  - 
   letterdialog: {fileID: 848360623}
   portrait: {fileID: -452637836, guid: d843c858a4a55fa46b9db78a34317ac2, type: 3}
   cursortexture: {fileID: 2800000, guid: 1cd0d7a2d0c88c544908c14246fd0762, type: 3}
@@ -25870,7 +25869,7 @@ MonoBehaviour:
   deliverLetterDialog:
   - Thank you!
   - My husband has been waiting for this document.
-  - Now we can finally build our houseQ
+  - Now we can finally build our house.
   afterletterdialog:
   - You must be exhausted from your travel.
   - Please rest, I set up a green tent nearby for you.
