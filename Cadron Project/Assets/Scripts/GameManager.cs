@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour
     public void AddLetter(string k){
         letters.Add(k, false);
     }
+    public void ClearLetters(){
+        letters = new Dictionary<string, bool>();
+
+    }
     IEnumerator ColorLerpFunction(bool fadeout, float duration)
     {
         float time = 0;
@@ -88,6 +92,7 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScene(string scene){
         StartCoroutine(LoadYourAsyncScene(scene));
+        ClearLetters();
     }
     public void DialogShow(string text) {
         dialogBox.SetActive(true);
