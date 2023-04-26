@@ -2573,7 +2573,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1703313645, guid: 7ab1bfe5206404146b6376f1f6154296, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12445,7 +12445,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 11
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12455,7 +12455,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 10
-      m_TileSpriteIndex: 14
+      m_TileSpriteIndex: 15
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -12465,7 +12465,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 9
-      m_TileSpriteIndex: 13
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13505,7 +13505,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 15
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -23794,6 +23794,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 734
     m_Data: {fileID: 21300000, guid: 5963fe5803291dc409f7de59a6a23698, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -462894935, guid: 379f50a644d3388498ed2a541d934860, type: 3}
   - m_RefCount: 1
@@ -23802,8 +23804,6 @@ Tilemap:
     m_Data: {fileID: 1124417042, guid: 198e50fcd0771634ea04553c7b119061, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1278232433, guid: 198e50fcd0771634ea04553c7b119061, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: -1755332823, guid: 379f50a644d3388498ed2a541d934860, type: 3}
   - m_RefCount: 2
@@ -24026,7 +24026,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
 --- !u!4 &719854225
 Transform:
@@ -24304,7 +24304,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -452637836, guid: d843c858a4a55fa46b9db78a34317ac2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24557,7 +24557,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1565830978, guid: a1b589e3794d6bd41b6f4deccd6a0c29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -25762,7 +25762,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1008754292, guid: e53441cd4ff75e54c8e974a928b6a9c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -26343,7 +26343,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.25, y: 0.25}
   m_EdgeRadius: 0
 --- !u!4 &1723508991
 Transform:
@@ -26726,6 +26726,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1155187338570968228, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1155187338570968229, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
       propertyPath: m_Name
       value: LevelLoader
@@ -26782,6 +26786,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5774328422438173043, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
+      propertyPath: myButton
+      value: 
+      objectReference: {fileID: 203998380}
     - target: {fileID: 5774328422438173043, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
       propertyPath: transition
       value: 
