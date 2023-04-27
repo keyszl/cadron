@@ -3114,6 +3114,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5774328422438173043, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
+      propertyPath: scene
+      value: Season 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5774328422438173043, guid: 0b90042d3db741041bc7b010e7d3665c, type: 3}
       propertyPath: myButton
       value: 
       objectReference: {fileID: 19621954}

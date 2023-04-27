@@ -11,6 +11,7 @@ public class LevelLoader : MonoBehaviour
   public float transitionTime;
 
   public Button myButton;
+  public string scene;
 
     void Start(){
       Button btn = myButton.GetComponent<Button>();
@@ -27,17 +28,18 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadLevel(scene));
     }
     
 
-    IEnumerator LoadLevel(int LevelIndex)
+    IEnumerator LoadLevel(string level)
     {
       transition.SetTrigger("Start");
 
       yield return new WaitForSeconds(transitionTime);
 
-      SceneManager.LoadScene(LevelIndex);
+      SceneManager.LoadScene(level);
+      GameManager.Instance.ClearLetters();
     }
 
 }

@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
     private bool gamePaused = false;
     private bool raiseLower = false;
 
+    private bool newletter;
+
      void Awake(){
         if (Instance == null){
             Instance = this;
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
     }
     public void AddLetter(string k){
         letters.Add(k, false);
+        newletter = true;
     }
     public void ClearLetters(){
         letters = new Dictionary<string, bool>();
@@ -135,6 +138,11 @@ public class GameManager : MonoBehaviour
     public void EndCutscene(){
         DialogHide();
         gamePaused = false;
+        if (newletter == true){
+            GameObject bpb = canvas.transform.Find("BackpackButton").gameObject;
+            bpb.GetComponent<BackpackLetterPopup>().ShowNewLetter();
+            newletter = false;
+        }
     //        Time.timeScale = 1f;
 
     }

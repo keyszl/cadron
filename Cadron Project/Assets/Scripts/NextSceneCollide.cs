@@ -13,8 +13,9 @@ public class NextSceneCollide : MonoBehaviour
     {
         if (coll.gameObject == target)
         {
-            if((requiredletter != null) && GameManager.Instance.IsLetterDelivered(requiredletter))
+            if((requiredletter != "") && GameManager.Instance.IsLetterDelivered(requiredletter))
             {
+            
             //print to the console
             Debug.Log("Player has exited the trigger");
             GameManager.Instance.ChangeScene(scene);

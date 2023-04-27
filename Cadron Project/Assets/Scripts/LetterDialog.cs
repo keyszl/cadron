@@ -11,6 +11,8 @@ public class LetterDialog : MonoBehaviour
     public bool sendsLetter;
     public bool receivesLetter;
 
+    public bool sendbeforereceive;
+
 
     public ClickCutsceneScript dialogScript;
     private string charname;
@@ -35,15 +37,21 @@ public class LetterDialog : MonoBehaviour
         
     }
     public void UpdateLetter(){
-        if(GM.HaveLetter(charname)){
+        if(receivesLetter){
+           if(GM.HaveLetter(charname)){
             if(!GM.IsLetterDelivered(charname)){
                 GM.UpdateLetterStatus(charname);
                 if(!GM.HaveLetter(sendsletterto) && sendsLetter){
                   GM.AddLetter(sendsletterto);  
                 }
             }
+            } 
+            else if (sendbeforereceive && !GM.HaveLetter(sendsletterto)){
+                GM.AddLetter(sendsletterto);
+            }
         }
-        if(!GM.HaveLetter(sendsletterto)){
+        
+        else if(sendsLetter && !GM.HaveLetter(sendsletterto)){
             GM.AddLetter(sendsletterto);
         }
     }
