@@ -1387,7 +1387,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Designers
+  m_text: '
+
+    Designers
 
     Amelia Jones
 
@@ -1430,8 +1432,6 @@ MonoBehaviour:
 
 
 
-
-    test
 
 
 
@@ -1983,7 +1983,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4291421164
-  m_fontColor: {r: 0.9254902, g: 0.8901961, b: 0.7882353, a: 1}
+  m_fontColor: {r: 0.03773582, g: 0.037064508, b: 0.035125166, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2805,7 +2805,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4291421164
-  m_fontColor: {r: 0.9254902, g: 0.8901961, b: 0.7882353, a: 1}
+  m_fontColor: {r: 0.03773582, g: 0.03654916, b: 0.03654916, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4190,7 +4190,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4291421164
-  m_fontColor: {r: 0.9254902, g: 0.8901961, b: 0.7882353, a: 1}
+  m_fontColor: {r: 0.028301895, g: 0.027867068, b: 0.0266109, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
