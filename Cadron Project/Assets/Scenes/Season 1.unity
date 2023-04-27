@@ -471,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 388119394}
   scene: Road
+  requiredletter: Lydia McFarland
 --- !u!61 &85707768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25870,8 +25871,9 @@ MonoBehaviour:
   - Thank you!
   - My husband has been waiting for this document.
   - Now we can finally build our house.
-  afterletterdialog:
   - You must be exhausted from your travel.
+  - Please rest, I set up a green tent nearby for you.
+  afterletterdialog:
   - Please rest, I set up a green tent nearby for you.
   sendsLetter: 0
   receivesLetter: 1
