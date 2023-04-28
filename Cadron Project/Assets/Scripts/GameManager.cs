@@ -114,13 +114,24 @@ public class GameManager : MonoBehaviour
         dialogBox.SetActive(false);
     }
 
+    public void ShowButtons(){
+        canvas.transform.Find("BackpackButton").gameObject.SetActive(true);
+        canvas.transform.Find("MapButton").gameObject.SetActive(true);
+    }
+    public void HideButtons(){
+        
+        canvas.transform.Find("BackpackButton").gameObject.SetActive(false);
+        canvas.transform.Find("MapButton").gameObject.SetActive(false);
+    }
+
     public void ToCutscene(string[] dialog, string name, Sprite portrait){
         CutSceneDialog dialogscript = dialogBox.GetComponent<CutSceneDialog>();
          dialogscript.lines = dialog;
          dialogBox.SetActive(true);
          DialogShow(dialog[0]);
          dialogscript.StartCutscene(name, portrait);
-             gamePaused = true;
+         gamePaused = true;
+         HideButtons();  
     //         Time.timeScale = 0f;
 
     }
@@ -138,6 +149,7 @@ public class GameManager : MonoBehaviour
     public void EndCutscene(){
         DialogHide();
         gamePaused = false;
+        ShowButtons();
         if (newletter == true){
             GameObject bpb = canvas.transform.Find("BackpackButton").gameObject;
             bpb.GetComponent<BackpackLetterPopup>().ShowNewLetter();
