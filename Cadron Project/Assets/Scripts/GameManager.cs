@@ -147,6 +147,9 @@ public class GameManager : MonoBehaviour
 
     }
     public void EndCutscene(){
+        // if the scenes name is cutscene, then transition to the Season2 scene here
+        if (SceneManager.GetActiveScene().name == "Cutscene") { ChangeScene("Season 2"); }
+        
         DialogHide();
         gamePaused = false;
         ShowButtons();
