@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class NextSceneCollide : MonoBehaviour
 {
-    public GameObject target;
     public string scene;
     public string requiredletter;
 
     public void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject == target)
+        if (coll.gameObject.CompareTag("Player"))
         {
-            if((requiredletter != "") && GameManager.Instance.IsLetterDelivered(requiredletter))
+            if((requiredletter == "") || GameManager.Instance.IsLetterDelivered(requiredletter))
             {
             
             //print to the console
