@@ -27,6 +27,8 @@ Fire - https://brullov.itch.io/fire-animation
 Food - https://henrysoftware.itch.io/pixel-food
 Nature - https://shubibubi.itch.io/nature-things
 Scroll image - https://pngtree.com/freepng/old-kraft-paper-scroll_5446449.html
+Envelope image - https://opengameart.org/content/envelope
+Keyboard image - https://opengameart.org/content/keyboard-keys-1
 Tent - https://opengameart.org/content/tent-8
 Indoor objects - https://penzilla.itch.io/top-down-retro-house
 
