@@ -19,17 +19,29 @@ Mechanics:
 --Credits:
 
 Aesthetics:
+
 Animals - https://kale-game.itch.io/2d-pixel-art
+
 Animated Animals - https://lyaseek.itch.io/miniffanimals
+
 Base Tile set - https://mythril-age.itch.io/mythril-age-tilesets
+
 Characters - https://shatteredreality.itch.io/pcc
+
 Fire - https://brullov.itch.io/fire-animation
+
 Food - https://henrysoftware.itch.io/pixel-food
+
 Nature - https://shubibubi.itch.io/nature-things
+
 Scroll image - https://pngtree.com/freepng/old-kraft-paper-scroll_5446449.html
+
 Envelope image - https://opengameart.org/content/envelope
+
 Keyboard image - https://opengameart.org/content/keyboard-keys-1
+
 Tent - https://opengameart.org/content/tent-8
+
 Indoor objects - https://penzilla.itch.io/top-down-retro-house
 
 Sounds:
@@ -48,3 +60,9 @@ Pulasi County Historical Review - December, 1956 Vol. 4 No. 4  "SQUATTERS RIGHTS
  Faulkner Facts and Fiddlings - September 1959 Vol 1 No. 1. "Cadron" - Guy W. Murphy
 
  "Nuttall's Travels into the Arkansas Territory, 1819." - Thomas Nuttall / https://www.loc.gov/item/05013013/
+
+"Story of the Arkansas Traveler"- Arkansas Secretary of State (.gov website) / https://www.sos.arkansas.gov/education/arkansas-history/the-story-of-the-arkansas-traveler
+
+"McFarland Alexander (1764-1812)" - The Oklahoma Historical Society / https://www.okhistory.org/publications/enc/entry?entry=MC043
+
+"Joseph W. Harris (Veteran)" - Arkansas Gravestones.org / https://arkansasgravestones.org/view.php?id=1069111
