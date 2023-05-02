@@ -131,7 +131,10 @@ public class GameManager : MonoBehaviour
          DialogShow(dialog[0]);
          dialogscript.StartCutscene(name, portrait);
          gamePaused = true;
-         //HideButtons();  
+         if(!(SceneManager.GetActiveScene().name == "Cutscene")){
+         HideButtons();     
+         }
+         
     //         Time.timeScale = 0f;
 
     }
@@ -149,7 +152,7 @@ public class GameManager : MonoBehaviour
     public void EndCutscene(){
         // if the scenes name is cutscene, then transition to the Season2 scene here
         if (SceneManager.GetActiveScene().name == "Cutscene") { ChangeScene("Season 2"); }
-        
+        else{ShowButtons();}
         DialogHide();
         gamePaused = false;
         ShowButtons();
