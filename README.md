@@ -59,7 +59,7 @@ Faulkner Facts and Fiddlings - Winter 1972 Vol XIV No. 4. "Report on the Cadron 
 
 Pulasi County Historical Review - December, 1956 Vol. 4 No. 4  "SQUATTERS RIGHTS PART III The Cadron Settlement Prior to 1814" - Margaret Smith Ross
 
- Faulkner Facts and Fiddlings - September 1959 Vol 1 No. 1. "Cadron" - Guy W. Murphy
+ Faulkner Facts and Fiddlings - September 1959 Vol 1 No. 1. "Cadron" - Grafton Ellis Conway
 
  "Nuttall's Travels into the Arkansas Territory, 1819." - Thomas Nuttall / https://www.loc.gov/item/05013013/
 
