@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
          DialogShow(dialog[0]);
          dialogscript.StartCutscene(name, portrait);
          gamePaused = true;
-         HideButtons();  
+         //HideButtons();  
     //         Time.timeScale = 0f;
 
     }
