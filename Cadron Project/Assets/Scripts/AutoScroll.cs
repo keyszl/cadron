@@ -9,7 +9,7 @@ public class AutoScroll : MonoBehaviour
     // a script that scrolls the text upwards, like generic movie credits, or the end of a game
     // https://youtu.be/9a6GyAbhLUk?t=799
 
-    private float speed = 200.0f;
+    private float speed = 100.0f;
     private float boundaryStart = -4000.0f;
     private float boundaryEnd = 5850.0f;
     public RectTransform rectTransform;
