@@ -20,6 +20,8 @@ public class AnimalMove : MonoBehaviour
     private int spot = 0;                     // spot to move to
     private Rigidbody2D rb;
     private Animator anim;
+
+    private SpriteRenderer rend;
     private int randomSpot;                     //number of patrol spots 
 
 
@@ -27,12 +29,13 @@ public class AnimalMove : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        rend = GetComponent<SpriteRenderer>();
         randomSpot = Random.Range(0, moveSpots.Count);
     }
 
 
     private void Update()
-    {
+    {   
         
         //if the animal just collided with the player it will select another spot from moveSpots
         if (player == true)
@@ -44,7 +47,13 @@ public class AnimalMove : MonoBehaviour
             }
             player = false;
         }
-
+        rb.rotation = 0f;
+        if(moveSpots[spot].position.x < transform.position.x){
+            rend.flipX = true;
+        }
+        else if(moveSpots[spot].position.x > transform.position.x){
+            rend.flipX = false;
+        }
 
 
         // animal selects a spot, and then increases its speed in that direction, without rotating Z
@@ -52,6 +61,7 @@ public class AnimalMove : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, moveSpots[spot].position, speed * Time.deltaTime);
             anim.SetFloat("speed", speed);
+            
         }
         else
         {
