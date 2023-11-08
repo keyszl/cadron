@@ -4730,7 +4730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5a880bb82d96e764389be361cdb0bbaa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba40d0745f5f0f3459b37d2fc3b39363, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24909,7 +24909,7 @@ MonoBehaviour:
   - You will find nearby the borders of many tribes, peaceful and not.
   - So be careful.
   - One last thing...
-  - Its very important.
+  - It is very important.
   - Take this letter to Alexander McFarland, it is his pre-emption claim.
   - With this he can buy public land at a federally set minimum price.
   - That will be all...
