@@ -24915,7 +24915,7 @@ MonoBehaviour:
   - That will be all...
   - And I will be on my way.
   letterdialog: {fileID: 935217185}
-  portrait: {fileID: 1565830978, guid: a1b589e3794d6bd41b6f4deccd6a0c29, type: 3}
+  portrait: {fileID: 733511777, guid: 836161fa43f15724293a479bb29daad9, type: 3}
   cursortexture: {fileID: 2800000, guid: 1cd0d7a2d0c88c544908c14246fd0762, type: 3}
 --- !u!61 &935217187
 BoxCollider2D:
@@ -26476,7 +26476,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 348, y: -139}
-  m_SizeDelta: {x: 250, y: 300}
+  m_SizeDelta: {x: 200, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435460179
 MonoBehaviour:
