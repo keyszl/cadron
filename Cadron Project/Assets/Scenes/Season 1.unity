@@ -4730,7 +4730,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5a880bb82d96e764389be361cdb0bbaa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba40d0745f5f0f3459b37d2fc3b39363, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24829,9 +24829,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935217182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0bd15e8a7210c3b4ebf399871d714ca0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1901665fe1486744a8642d2456e4556a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -24909,13 +24909,13 @@ MonoBehaviour:
   - You will find nearby the borders of many tribes, peaceful and not.
   - So be careful.
   - One last thing...
-  - Its very important.
+  - It is very important.
   - Take this letter to Alexander McFarland, it is his pre-emption claim.
   - With this he can buy public land at a federally set minimum price.
   - That will be all...
   - And I will be on my way.
   letterdialog: {fileID: 935217185}
-  portrait: {fileID: 1565830978, guid: a1b589e3794d6bd41b6f4deccd6a0c29, type: 3}
+  portrait: {fileID: 733511777, guid: 836161fa43f15724293a479bb29daad9, type: 3}
   cursortexture: {fileID: 2800000, guid: 1cd0d7a2d0c88c544908c14246fd0762, type: 3}
 --- !u!61 &935217187
 BoxCollider2D:
@@ -24953,7 +24953,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.34, y: 0.4}
+    oldSize: {x: 0.18, y: 0.36}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -25003,7 +25003,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1565830978, guid: a1b589e3794d6bd41b6f4deccd6a0c29, type: 3}
+  m_Sprite: {fileID: 733511777, guid: 836161fa43f15724293a479bb29daad9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26476,7 +26476,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 348, y: -139}
-  m_SizeDelta: {x: 250, y: 300}
+  m_SizeDelta: {x: 200, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1435460179
 MonoBehaviour:
@@ -71548,8 +71548,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
