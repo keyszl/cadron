@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+
+    private AudioSource walking;
     
     private float moveLimiter = 0.7f;
 
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        walking = GetComponent<AudioSource>();
     }
     
     // Update is called once per frame
@@ -40,6 +43,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 spriteRenderer.flipX = false;
             }
+            if(horizontal != 0 || vertical != 0){
+                if(!walking.isPlaying){
+                    walking.Play();
+                }
+                
+            }
+            else{
+                walking.Stop();
+            }
 
         }
     }
@@ -50,8 +62,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("vertical", vertical);
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
+            
         }
-
+        
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
     
