@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class NextSceneCollide : MonoBehaviour
 {
-    public string scene;
+    public string nextscene;
+    public int whichscene;
     public string requiredletter;
 
     public void OnCollisionEnter2D(Collision2D coll)
@@ -17,7 +18,7 @@ public class NextSceneCollide : MonoBehaviour
             
             //print to the console
             Debug.Log("Player has exited the trigger");
-            GameManager.Instance.ChangeScene(scene);
+            GameManager.Instance.StartTentscene(whichscene, nextscene);
             }
         }
     }

@@ -624,7 +624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d31c6a7d3da16e8498b1cb4a9ac7e647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Road
+  nextscene: Road
+  whichscene: 0
   requiredletter: Lydia McFarland
 --- !u!61 &85707768
 BoxCollider2D:
