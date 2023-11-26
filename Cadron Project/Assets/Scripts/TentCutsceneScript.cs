@@ -12,6 +12,8 @@ public class TentCutsceneScript : MonoBehaviour
 
     public Sprite portrait;
 
+    public GameObject picture;
+
 
     void Awake()
     {
@@ -21,6 +23,7 @@ public class TentCutsceneScript : MonoBehaviour
     void Start()
     {
         if(GameManager.Instance.GetTentscene() == whichTentScene){
+         picture.SetActive(true);
          GameManager.Instance.ToCutscene(dialogLines, charname, portrait);    
         }
         
