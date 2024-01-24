@@ -17,8 +17,8 @@ public void FadeText(){
 IEnumerator Fade(){
     float time = 0;
     float duration = 4f;
-    Color startValue = new Color (1,1,1,1);
-    Color endValue = new Color(1, 1, 1, 0);
+    Color startValue = new Color (0,0,0,1);
+    Color endValue = new Color(0, 0, 0, 0);
     text = gameObject.GetComponent<TextMeshProUGUI>();
     yield return new WaitForSeconds(2);
     while (time < duration)
