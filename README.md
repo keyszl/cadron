@@ -1,6 +1,6 @@
 # cadron
 
-Game Design: Amelia Jones, Kaden Franklin, Taryn England, Zoie Keys
+Game Design: Amelia Jones, Kaden Franklin, Taryn England, Zoie Keys, Noah Morris
 
 Artist: Alyssa Chaffin
 
